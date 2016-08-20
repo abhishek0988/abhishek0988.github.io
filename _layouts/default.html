@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+  </head>
+  <body>
+    <div class="main">
 
-        {{ content }}
+    	<div class="header">
+    		<div class="title">
+          <h1>Abhishek Agrawal</h1>
+        </div>
 
-    </body>
+        <ul class="nav">
+          <li><a href="#">Projects</a></li>
+          <li>/</li>
+          <li><a href="#">Photos</a></li>
+          <li>/</li>
+          <li><a href="#">Painting</a></li>
+        </ul>
+
+     	</div>
+
+    	<div class="content">
+	        {{ content }}
+    	</div>
+
+    </div>
+  </body>
 </html>

@@ -14,5 +14,7 @@ The website is powered entirely by [Jekyll][], which uses [Markdown][] and
 
 ## Development
 
-jekyll build --watch
-jekyll serve
+In the root directory, run the following to run the Jekyll server and have it watch for changes.
+
+    $ jekyll build --watch
+    $ jekyll serve
