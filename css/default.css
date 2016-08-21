@@ -40,9 +40,13 @@ ul {
 }
 
 .header .title h1 {
-
   margin: 0;
   padding: 0;
+}
+
+.header .title a {
+  text-decoration: none;
+  color: #555;
 }
 
 .header .nav-container {
