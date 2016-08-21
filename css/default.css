@@ -7,6 +7,7 @@ body {
 h1, h2, h3 {
   font-family: 'Roboto Condensed';
   font-weight: 400;
+  margin: 0;
 }
 
 a {
@@ -15,7 +16,7 @@ a {
 }
 
 .main {
-  width: 900px;
+  width: 800px;
   margin: 80px auto;
   padding: 10px;
 }
@@ -31,25 +32,38 @@ a {
 }
 
 .header .title h1 {
-  font-size: 36px;
+  font-size: 34px;
   margin: 0;
   padding: 0;
+}
+
+.header .nav-container {
+  margin: 0;
+  padding: 0;
+  float: right;  
+  line-height: 60px;
 }
 
 .header .nav {
   margin: 0;
   padding: 0;
-  float: right;
-  line-height: 60px;
-  font-family: 'Roboto Condensed';
-  font-weight: lighter;
-  font-size: 18px;
 }
 
 .header .nav li {
+  font-family: 'Roboto Condensed';
+  font-weight: lighter;
+  font-size: 14px;
   display: inline;
   text-transform: uppercase;
   list-style: none;
   padding-left: 0;
   padding-right: 15px;
+}
+
+.content {
+  clear: both;
+}
+
+.content .intro {
+  width: 50%;
 }

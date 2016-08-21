@@ -1,0 +1,115 @@
+/* Viewport size */
+
+/* iPhone et al */
+@media only screen and (max-width: 480px) {
+
+  .main {
+    margin: 0 auto;
+    padding: 30px auto;
+    width: 460px;
+  }
+
+  .content {
+    padding-top: 10px;
+  }
+
+  .content .intro {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+  
+  .header .title {
+    float: none;
+  }
+
+  .header .nav-container {
+    float: none;
+    clear: left;
+    line-height: 30px;
+    display: inline-block;
+  }
+
+  .header .nav li {
+    font-size: 13px;
+    padding-right: 10px;
+    font-weight:400;
+  }
+
+  h1,h2 { font-size: 160%; }
+  h3 { font-size: 130%; }
+  h4 { font-size: 115%; }
+  h5, h6 { font-size: 110%; }
+
+}
+
+
+
+/* iPhone et al */
+@media only screen and (max-device-width: 480px) {
+  header {
+    height: 120px;
+    margin:0 1em 0 0.8em;
+  }
+    header h1 { float:none; }
+    header ul.navigation {
+      float:none;
+      padding-left:1em;
+      margin-top: 5px;
+    }
+    header ul.navigation > li > a {
+      font-size:13px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight:400;
+    }
+  
+  h1,h2 { font-size: 160%; }
+  h3 { font-size: 130%; }
+  h4 { font-size: 115%; }
+  h5, h6 { font-size: 110%; }
+
+  pre, code, tt { font-size:11px; }
+  
+  div.content { padding:3em 1.4em; font-size:0.9em; }
+    div.content blockquote { padding-left:2.5em; margin-left:-1em; }
+    div.content div.quotation blockquote { margin-left:0px; }
+    div.content:not(.sub) h1:first-child { font-size:210%; }
+    div.content pre {
+      margin: 0 -1em;
+      padding:1em;
+      background-color: #eee;
+      border-left: none;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    div.content *[align="right"] {
+      display:block;
+      float:none;
+      margin-left:0;
+    }
+    div.content *[align="right"][width$="%"] {
+      display:inline-block;
+      float:right;
+      margin-left:1em;
+    }
+    div.content *[align="right"][width="50%"] {
+      width:45%;
+    }
+
+  a.post-excerpt {
+    font-size:80%;
+  }
+    a.post-excerpt div.padded-content {
+      padding: 2em 2em;
+    }
+    a.post-excerpt:nth-child(1) div.padded-content,
+    a.post-excerpt:nth-child(2) div.padded-content {
+      padding-top: 2em;
+    }
+    a.post-excerpt.photo {
+      height:auto;
+      min-height:300px;
+    }
+}
