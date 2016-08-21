@@ -15,6 +15,14 @@ a {
   color: #316d96;
 }
 
+a:hover {
+  color: #39c;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
 .main {
   width: 800px;
   margin: 80px auto;
@@ -23,7 +31,7 @@ a {
 
 .header {
   height: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 3em;
 }
 
 .header .title {
@@ -32,7 +40,7 @@ a {
 }
 
 .header .title h1 {
-  font-size: 34px;
+
   margin: 0;
   padding: 0;
 }
@@ -52,7 +60,7 @@ a {
 .header .nav li {
   font-family: 'Roboto Condensed';
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 0.85em;
   display: inline;
   text-transform: uppercase;
   list-style: none;
@@ -60,10 +68,18 @@ a {
   padding-right: 15px;
 }
 
-.content {
-  clear: both;
+.content .intro {
+  width: 60%;
 }
 
-.content .intro {
-  width: 50%;
+.content h3 {
+  font-size: 18px;
+  margin-top: 1.5em;
 }
+
+h1 { font-size: 2.1em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
