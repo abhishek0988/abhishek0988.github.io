@@ -1,23 +1,22 @@
 /* Viewport size */
 
 /* iPhone et al */
-@media screen and (max-width: 480px) {
+@media only screen 
+and (max-width: 480px) 
+and (orientation : portrait) {
 
   .main {
     margin: 0 auto;
     padding: 30px auto;
-    width: 460px;
+    width: 90%;
   }
 
   .content {
     padding-top: 10px;
+    font-size: 14px;
   }
 
   .content .intro {
-    width: 100%;
-  }
-
-  .header {
     width: 100%;
   }
   
