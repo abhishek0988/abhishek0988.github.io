@@ -80,6 +80,10 @@ ul {
   padding-right: 15px;
 }
 
+.header .nav li:last-child {
+  padding-right: 0;
+}
+
 .content .intro {
   width: 60%;
 }
