@@ -1,12 +1,30 @@
 ---
 layout: default
 title: Abhishek Agrawal - Painting
+photos:
+  - path: /img/paintings/sunrise.jpg
+    caption: Sunrise. February, 2015
+  - path: /img/paintings/cambridge_study.jpg
+    caption: Study for Cambridge scene. January, 2015
+  - path: /img/paintings/lillies.jpg
+    caption: Lillies. February, 2012
+  - path: /img/paintings/orchid.jpg
+    caption: Orchid. May, 2011
+  - path: /img/paintings/seattle.jpg
+    caption: Seattle cityscape. March, 2011
+  - path: /img/paintings/tulip.jpg
+    caption: Tulip. November, 2010
 ---
 
-<div>
-
-<h2>Painting</h2>
- 
+<div class="photos-pane">
+	<div class="photos-pane-wrapper">
+	  {% for photo in page.photos %}
+		<div class="photo">
+			<div class="photo-image">
+				<img src="/img/blank.gif" data-echo="{{ photo.path }}" alt="{{ photo.caption}}">
+			</div>
+			<p class="caption">{{ photo.caption}}</p>
+		</div>
+	  {% endfor %}
+	</div>
 </div>
-
-
