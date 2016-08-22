@@ -4,6 +4,13 @@ body {
   font-weight: lighter;
 }
 
+h1 { font-size: 2.1em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
 h1, h2, h3 {
   font-family: 'Roboto Condensed';
   font-weight: 400;
@@ -25,7 +32,7 @@ ul {
 
 .main {
   width: 800px;
-  margin: 80px auto;
+  margin: 5em auto;
   padding: 10px;
 }
 
@@ -80,10 +87,3 @@ ul {
   font-size: 18px;
   margin-top: 1.5em;
 }
-
-h1 { font-size: 2.1em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }

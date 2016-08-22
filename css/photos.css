@@ -1,0 +1,33 @@
+.photos-pane {
+	margin-top: 1.5em;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.photos-pane-wrapper {
+	white-space: nowrap;
+}
+
+.photo {
+	display: table-cell;
+    height: 100%;
+    width: auto;
+    padding-right: 1.5em;
+    vertical-align: top;
+}
+
+.photo-image {
+	background: #bbb;
+}
+
+.photo-image img {
+	display: block;
+    width: auto;
+    height: calc(100vh - 25em);
+}
+
+.photo .caption {
+	white-space: pre-wrap;
+	font-size: 14px;
+	margin-top: 0.5em;
+}

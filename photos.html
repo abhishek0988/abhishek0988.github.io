@@ -1,12 +1,36 @@
 ---
 layout: default
 title: Abhishek Agrawal - Photos
+photos:
+  - path: /img/photos/patagonia-calafate2.jpg
+    caption: El Calafate, Patagonia. January, 2012
+  - path: /img/photos/patagonia-calafate1.jpg
+    caption: El Calafate, Patagonia. January, 2012
+  - path: /img/photos/patagonia-chalten.jpg
+    caption: Mt. Fitz Roy, El Chalten, Patagonia. January, 2012
+  - path: /img/photos/kerala-boat.jpg
+    caption: Kerala House Boat. January, 2013
+  - path: /img/photos/austin-kite.jpg
+    caption: Austin Kite Festival. March, 2013
+  - path: /img/photos/florence.jpg
+    caption: Florence. October, 2015
 ---
 
-<div>
+<div class="intro">
 
-<h2>Photos</h2>
+<p>These are some of my favorite shots over the years. I use an Olympus E-520 and more recently a Canon EOS Rebel T5.
  
 </div>
 
-
+<div class="photos-pane">
+	<div class="photos-pane-wrapper">
+	  {% for photo in page.photos %}
+		<div class="photo">
+			<div class="photo-image">
+				<img src="{{ photo.path }}" alt="{{ photo.caption}}">
+			</div>
+			<p class="caption">{{ photo.caption}}</p>
+		</div>
+	  {% endfor %}
+	</div>
+</div>
