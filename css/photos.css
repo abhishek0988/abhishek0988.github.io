@@ -23,7 +23,7 @@
 .photo-image img {
 	display: block;
     width: auto;
-    height: calc(100vh - 25em);
+    height: calc(100vh - 20em);
 }
 
 .photo .caption {
