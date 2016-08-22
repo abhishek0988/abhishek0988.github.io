@@ -1,15 +1,19 @@
 .photos-pane {
 	margin-top: 1.5em;
     width: 100%;
-    overflow-x: scroll;
 }
 
 .photos-pane-wrapper {
-	white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 .photo {
-	display: table-cell;
+/*	display: table-cell;*/
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
     height: 100%;
     width: auto;
     padding-right: 1.5em;
@@ -17,7 +21,7 @@
 }
 
 .photo-image {
-	background: #bbb;
+	background: #eee;
 }
 
 .photo-image img {

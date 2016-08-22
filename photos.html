@@ -27,7 +27,7 @@ photos:
 	  {% for photo in page.photos %}
 		<div class="photo">
 			<div class="photo-image">
-				<img src="{{ photo.path }}" alt="{{ photo.caption}}">
+				<img src="/img/blank.gif" data-echo="{{ photo.path }}" alt="{{ photo.caption}}">
 			</div>
 			<p class="caption">{{ photo.caption}}</p>
 		</div>
