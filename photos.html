@@ -1,20 +1,8 @@
 ---
 layout: default
 title: Abhishek Agrawal - Photos
-photos:
-  - path: /img/photos/patagonia-calafate2.jpg
-    caption: El Calafate, Patagonia. January, 2012
-  - path: /img/photos/patagonia-calafate1.jpg
-    caption: El Calafate, Patagonia. January, 2012
-  - path: /img/photos/patagonia-chalten.jpg
-    caption: Mt. Fitz Roy, El Chalten, Patagonia. January, 2012
-  - path: /img/photos/kerala-boat.jpg
-    caption: Kerala House Boat. January, 2013
-  - path: /img/photos/austin-kite.jpg
-    caption: Austin Kite Festival. March, 2013
-  - path: /img/photos/florence.jpg
-    caption: Florence. October, 2015
 ---
+{% assign photo_posts = site.posts | where: "category", "photos" %}
 
 <div class="intro">
 
@@ -24,10 +12,10 @@ photos:
 
 <div class="photos-pane">
 	<div class="photos-pane-wrapper">
-	  {% for photo in page.photos %}
+	  {% for photo in photo_posts %}
 		<div class="photo">
 			<div class="photo-image">
-				<img src="/img/blank.gif" data-echo="{{ photo.path }}" alt="{{ photo.caption}}">
+				<img src="/img/blank.gif" data-echo="{{ photo.photo_url }}" alt="{{ photo.caption}}">
 			</div>
 			<p class="caption">{{ photo.caption}}</p>
 		</div>

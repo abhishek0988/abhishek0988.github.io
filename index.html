@@ -1,35 +1,57 @@
 ---
-layout: default
+layout: home
 title: Abhishek Agrawal
 ---
+{% assign project_posts = site.posts | where: "category", "projects" %}
+{% assign photo_posts = site.posts | where: "category", "photos" %}
+{% assign painting_posts = site.posts | where: "category", "paintings" %}
 
-<div class="intro">
-
-<p><strong>Hi!</strong> My name is Abhishek, and this is a collection of some of my art and engineering projects.</p>
-
-<p>I'm currently living and working in San Francisco as a Product Manager at <a href="http://dropbox.com" target="_blank">Dropbox</a>. Previously, I worked as an engineer at a <a href="https://www.microsoft.com/office/labs/" target="_blank">Microsoft Incubation Lab</a> and studied at HBS and Princeton.</p>
-
-<!--<h3>I ocassionally blog on Medium</h3>
-...Recent posts -->
-
-<h3>Here's me elsewhere on the web</h3>
-<ul >
-	<li>
-		<a href="https://www.linkedin.com/in/abhishek-agrawal-4ab46616" target="_blank">  LinkedIn
+<div class="bio">
+  <h1 class="top-aligned">Abhishek Agrawal</h1>
+  <p>
+    Hi! This is a collection of some of my art and engineering projects.
+  </p>
+  <p>I'm currently living in San Francisco and working on a new company. Previously, I 
+    was an early PM at <a href="http://dropbox.com" target="_blank">Dropbox</a> and
+    an an engineer at a <a href="https://www.microsoft.com/office/labs/" target="_blank">Microsoft Incubation Lab</a>.
+  </p>
+  <br/>
+  <div class="social">
+    <a href="https://www.linkedin.com/in/abhishek-agrawal-4ab46616" target="_blank">
+      <i class="fa fa-linkedin-square fa-lg"></i>
     </a>
-	</li>
-  <li>
-    <a href="https://github.com/abhishek0988/" target="_blank">
-    GitHub
-    </a>
-  </li>
-  <li>
     <a href="https://www.facebook.com/abhishek.agrawal0988" target="_blank">
-    Facebook
+      <i class="fa fa-facebook-square fa-lg"></i>
     </a>
-  </li>
-</ul>
+    <a href="https://github.com/abhishek0988/" target="_blank">
+      <i class="fa fa-github-square fa-lg"></i>
+    </a>
+    <a href="mailto:abhishek88@gmail.com">
+      <i class="fa fa-envelope-square fa-lg"></i>
+    </a>
+  </div>
 
+</div>
+
+<div class="sections">  
+  
+  <h3 class="top-aligned"><a href="">Projects</a></h3>
+  <!--<ul>
+    {% for post in project_posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>-->
+
+  <div>
+    <h3><a href="">Photos</a></h3>  
+    <div style="display: flex;">
+      {% for post in photo_posts limit: 3 %}
+          <div class="teaser {{% if forloop.first or forloop.last %}} first{{% endif %}}">
+            <img src="{{post.photo_url}}" style="max-width: 100%;"/>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 

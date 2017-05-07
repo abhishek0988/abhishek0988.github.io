@@ -1,7 +1,35 @@
+@font-face {
+  font-family: 'Fakt';
+  src: url("/fonts/FaktPro-Normal.woff") format("woff");
+  font-weight: 400; }
+@font-face {
+  font-family: 'Fakt';
+  src: url("/fonts/FaktPro-NormalItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Fakt';
+  src: url("/fonts/FaktPro-Bold.woff") format("woff");
+  font-weight: bold; }
+@font-face {
+  font-family: 'Fakt';
+  src: url("/fonts/FaktPro-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'Tiempos';
+  src: url("/fonts/TiemposTextWeb-Regular.woff2") format("woff2"), url("/fonts/TiemposTextWeb-Regular.woff") format("woff");
+  font-weight: 400; }
+@font-face {
+  font-family: 'Tiempos';
+  src: url("/fonts/TiemposTextWeb-RegularItalic.woff2") format("woff2"), url("/fonts/TiemposTextWeb-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic; }
+  
 body {  
-  font: 16px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #555;
-  font-weight: lighter;
+  font-family: Fakt, "San Francisco", -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  color: #2E2F30;
 }
 
 h1 { font-size: 2.1em; }
@@ -12,7 +40,6 @@ h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
 h1, h2, h3 {
-  font-family: 'Roboto Condensed';
   font-weight: 400;
   margin: 0;
 }
@@ -70,11 +97,10 @@ ul {
 }
 
 .header .nav li {
-  font-family: 'Roboto Condensed';
+  color: #2E2F30;
   font-weight: lighter;
   font-size: 0.85em;
   display: inline;
-  text-transform: uppercase;
   list-style: none;
   padding-left: 0;
   padding-right: 15px;
