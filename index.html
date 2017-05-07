@@ -15,7 +15,6 @@ title: Abhishek Agrawal
     was an early PM at <a href="http://dropbox.com" target="_blank">Dropbox</a> and
     an an engineer at a <a href="https://www.microsoft.com/office/labs/" target="_blank">Microsoft Incubation Lab</a>.
   </p>
-  <br/>
   <div class="social">
     <a href="https://www.linkedin.com/in/abhishek-agrawal-4ab46616" target="_blank">
       <i class="fa fa-linkedin-square fa-lg"></i>
@@ -35,19 +34,16 @@ title: Abhishek Agrawal
 
 <div class="sections">  
   
-  <h3 class="top-aligned"><a href="">Projects</a></h3>
-  <!--<ul>
-    {% for post in project_posts %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>-->
+  <!--<h3 class="no-top-margin"><a href="">Projects</a></h3>-->
 
   <div>
-    <h3><a href="">Photos</a></h3>  
-    <div style="display: flex;">
+    <h3 class="no-top-margin no-bottom-margin"><a href="">Photos</a></h3>  
+    <div class="teaser-grid">
       {% for post in photo_posts limit: 3 %}
-          <div class="teaser {{% if forloop.first or forloop.last %}} first{{% endif %}}">
-            <img src="{{post.photo_url}}" style="max-width: 100%;"/>
+          <div class="cell">
+            <a href="{{post.url}}">
+              <img src="{{post.photo_url}}" class="responsive-image"/>
+            </a>
           </div>
       {% endfor %}
     </div>

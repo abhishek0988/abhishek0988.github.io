@@ -1,0 +1,29 @@
+@media screen and (min-width: 800px) {
+  .main {
+    display: flex;
+    margin: 2em auto;
+    padding: 2em;
+    flex-wrap: wrap;
+  }
+
+  .bio {
+    flex: 1;
+    margin-right: 3em;
+  }
+
+  .sections {
+    flex: 2;
+    margin-top: 0;
+  }
+
+  .teaser-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .teaser-grid .cell {
+    width: calc(33.3333% - 1rem);
+  }
+
+}
