@@ -14,7 +14,8 @@ The website is powered entirely by [Jekyll][], which uses [Markdown][] and
 
 ## Development
 
-In the root directory, run the following to run the Jekyll server and have it watch for changes.
+1) Install Jekyll using Bundler. See instructions [here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-2-install-jekyll-using-bundler).
 
-    $ jekyll build --watch
-    $ jekyll serve
+2) In the root directory, run the following to run the Jekyll server and have it watch for changes.
+
+    $ bundle exec jekyll serve
