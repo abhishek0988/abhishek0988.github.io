@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Abhishek Agrawal - Photos
 ---
 {% assign photo_posts = site.posts | where: "category", "photos" %}
@@ -10,15 +10,16 @@ title: Abhishek Agrawal - Photos
  
 </div>
 
-<div class="photos-pane">
-	<div class="photos-pane-wrapper">
-	  {% for photo in photo_posts %}
-		<div class="photo">
-			<div class="photo-image">
-				<img src="/img/blank.gif" data-echo="{{ photo.photo_url }}" alt="{{ photo.caption}}">
-			</div>
-			<p class="caption">{{ photo.caption}}</p>
-		</div>
-	  {% endfor %}
+{% for photo in photo_posts %}	
+	<div class="cell" style="margin-bottom: 1em;">
+		<p class="caption">{{ photo.title}}</p>
+		<img src="{{photo.photo_url}}" class="responsive-image"/>
 	</div>
-</div>
+{% endfor %}
+
+	<!--<div class="photo">
+		<div class="photo-image">
+			<img src="/img/blank.gif" data-echo="{{ photo.photo_url }}" alt="{{ photo.caption}}">
+		</div>
+		<p class="caption">{{ photo.caption}}</p>
+	</div>-->
