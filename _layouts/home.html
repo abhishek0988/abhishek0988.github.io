@@ -7,24 +7,12 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/media.css">
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <div class="main">
         {{ content }}
     </div>
-
-    <script src="/js/echo.js"></script>
-    <script>
-      echo.init({
-        offsetVertical: 0,
-        offsetHorizontal: 300,
-        throttle: 250,
-        container: document.querySelector(".photos-pane-wrapper"),
-        callback: function (element, op) {
-          console.log(element, 'has been', op + 'ed')
-        }
-      });
-    </script>
-
   </body>
 </html>

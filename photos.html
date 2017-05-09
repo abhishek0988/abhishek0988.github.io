@@ -4,22 +4,26 @@ title: Abhishek Agrawal - Photos
 ---
 {% assign photo_posts = site.posts | where: "category", "photos" %}
 
-<div class="intro">
 
 <p>These are some of my favorite shots over the years. I use an Olympus E-520 and more recently a Canon EOS Rebel T5.</p>
- 
+
+<div class="photos-list">
+	{% for photo in photo_posts %}
+	<div class="cell">
+		<img src="/img/blank.gif" class="responsive-image" data-echo="{{ photo.photo_url }}" alt="{{ photo.caption}}">
+		<p class="caption">{{ photo.title}}</p>
+	</div>
+	{% endfor %}
 </div>
 
-{% for photo in photo_posts %}	
-	<div class="cell" style="margin-bottom: 1em;">
-		<p class="caption">{{ photo.title}}</p>
-		<img src="{{photo.photo_url}}" class="responsive-image"/>
-	</div>
-{% endfor %}
-
-	<!--<div class="photo">
-		<div class="photo-image">
-			<img src="/img/blank.gif" data-echo="{{ photo.photo_url }}" alt="{{ photo.caption}}">
-		</div>
-		<p class="caption">{{ photo.caption}}</p>
-	</div>-->
+<script src="/js/echo.js"></script>
+<script>
+	echo.init({
+		offsetVertical: 10,
+		offsetHorizontal: 0,
+		throttle: 250,
+		callback: function (element, op) {
+			console.log(element, 'has been', op + 'ed')
+		}
+	});
+</script>

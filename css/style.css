@@ -68,3 +68,15 @@ a:hover {
 .teaser-grid .cell img {
   display: block;
 }
+
+.photos-list {
+  margin-top: 3em;
+}
+
+.photos-list .cell {
+  margin-bottom: 3em;
+}
+
+.photos-list .caption {
+  margin-top: 0;
+}
