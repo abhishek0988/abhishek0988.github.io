@@ -14,5 +14,17 @@
     <div class="main">
         {{ content }}
     </div>
+
+    <script src="/js/echo.js"></script>
+    <script>
+      echo.init({
+        offsetVertical: 10,
+        offsetHorizontal: 0,
+        throttle: 250,
+        callback: function (element, op) {
+          console.log(element, 'has been', op + 'ed')
+        }
+      });
+    </script>
   </body>
 </html>
