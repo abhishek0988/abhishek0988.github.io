@@ -13,6 +13,9 @@
 
   .sections {
     flex: 2;
+  }
+
+  .section {
     margin-top: 0;
   }
 
@@ -23,6 +26,8 @@
   }
 
   .teaser-grid .cell {
+    margin: 0.5em;
+    margin-left: 0;
     width: calc(33.3333% - 1rem);
   }
 

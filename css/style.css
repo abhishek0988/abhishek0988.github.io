@@ -22,9 +22,7 @@ body {
   font-size: 18px;
 }
 
-p, ul {
-  line-height: 26.1px;
-}
+p, ul { line-height: 26.1px; }
 
 h1, h2, h3 { color: #2E2F30; }
 h1 { font-size: 2em; }
@@ -38,9 +36,7 @@ a {
   color: #4c8edb;
 }
 
-a:hover {
-  color: #39c;
-}
+a:hover { color: #39c; }
 
 .main {
   max-width: 900px;
@@ -52,16 +48,14 @@ a:hover {
   margin-right: 0.1em;
 }
 
-.sections {
-  margin-top: 3em;
-}
+.section { margin-top: 3em; }
 
 .responsive-image {
   max-width: 100%;
 }
 
 .teaser-grid .cell {
-  margin: 0.5rem;
+  margin: 1em;
   margin-left: 0;
 }
 
