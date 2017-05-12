@@ -8,3 +8,14 @@
 safe: true
 source: .
 destination: ./_site
+
+mini_magick:
+  photos:
+    source: ./img/originals/photos/
+    destination: ./img/photos/
+    resize: "1600x1600"
+
+  paintings:
+    source: ./img/originals/paintings
+    destination: ./img/paintings/
+    resize: "1600x1600"
