@@ -19,3 +19,7 @@ The website is powered entirely by [Jekyll][], which uses [Markdown][] and
 2) In the root directory, run the following to run the Jekyll server and have it watch for changes.
 
     $ bundle exec jekyll serve
+
+3) In the source branch, run the following to publish the generated site to the master branch.
+
+    $ rake publish
