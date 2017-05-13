@@ -42,6 +42,10 @@ a:hover { color: #39c; }
   margin: 2em 1em;
 }
 
+.social {
+  margin-top: 1.5em;
+}
+
 .social a {
   color: #999;
   margin-right: 0.1em;
