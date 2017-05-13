@@ -2,7 +2,7 @@
 layout: home
 title: Los Baños de Doña María de Padilla, Alcázar in Sevilla. September, 2016
 category: photos
-photo_url: /img/photos/water-tunnel.jpg
+photo_url: /img/photos/water_tunnel.jpg
 thumb_url: /img/photos/thumb/water_tunnel.jpg
 ---
 
