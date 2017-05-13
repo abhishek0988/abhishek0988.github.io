@@ -18,7 +18,7 @@ mini_magick:
   paintings:
     source: ./img/originals/paintings
     destination: ./img/paintings/
-    resize: "1600x1600^"
+    resize: "1600x1600"
     
   photos_thumb:
     source: ./img/originals/photos/
