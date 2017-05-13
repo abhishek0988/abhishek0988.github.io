@@ -22,7 +22,8 @@ task :publish => [:generate] do
     Dir.chdir tmp
 
     system "rm -f 'rakefile' 'Gemfile' 'Gemfile.lock'"
-    
+    system "rm -r img/originals"
+
     system "git init"
     system "git add ."
     message = "Site updated at #{Time.now.utc}"
