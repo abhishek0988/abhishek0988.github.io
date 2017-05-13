@@ -8,8 +8,13 @@ require "jekyll"
 
 GITHUB_REPONAME = "abhishek0988/abhishek0988.github.io"
 
-desc "Generate and publish blog to gh-pages"
-task :publish do
+desc "Generate site files"
+task :generate do
+  system "bundle exec jekyll build"
+end
+
+desc "Generate and publish site to gh-pages"
+task :publish => [:generate] do
   Dir.mktmpdir do |tmp|
     cp_r "_site/.", tmp
 
