@@ -9,10 +9,10 @@ title: Abhishek Agrawal - Photos
 <div class="photos-list">
 	{% for photo in painting_posts %}
 	<div class="cell">
-    <a href="{{post.url}}">
+    <a href="{{photo.url}}">
 		  <img src="/img/blank.gif" class="responsive-image" data-echo="{{photo.photo_url}}" title="{{photo.caption}}">
     </a>
-		<p class="caption">{{ photo.title}}</p>
+		<p class="caption">{{photo.title}}</p>
 	</div>
 	{% endfor %}
 </div>
