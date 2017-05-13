@@ -3,6 +3,7 @@ layout: home
 title: Austin Kite Festival. March, 2013
 category: photos
 photo_url: /img/photos/austin-kite.jpg
+thumb_url: /img/photos/thumb/austin-kite.jpg
 ---
 
 <div>

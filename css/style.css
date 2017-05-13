@@ -52,7 +52,8 @@ a:hover { color: #39c; }
 .section .view-more { font-size: 16px; }
 
 .responsive-image {
-  max-width: 100%;
+  width:100%;
+	height:auto;
 }
 
 .teaser-grid .cell {

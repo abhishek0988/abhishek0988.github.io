@@ -18,4 +18,18 @@ mini_magick:
   paintings:
     source: ./img/originals/paintings
     destination: ./img/paintings/
-    resize: "1600x1600"
+    resize: "1600x1600^"
+    
+  photos_thumb:
+    source: ./img/originals/photos/
+    destination: ./img/photos/thumb/
+    resize: "800x600^"
+    gravity: "Center"
+    crop: "800x600+0+0"    
+
+  paintings_thumb:
+    source: ./img/originals/paintings
+    destination: ./img/paintings/thumb/
+    resize: "800x600^"
+    gravity: "Center"
+    crop: "800x600+0+0"
