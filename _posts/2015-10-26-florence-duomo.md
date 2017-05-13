@@ -1,6 +1,6 @@
 ---
 layout: home
-title: View from the Duomo in Florence. October, 2015
+title: View of Florence. October, 2015
 category: photos
 photo_url: /img/photos/florence.jpg
 thumb_url: /img/photos/thumb/florence.jpg
