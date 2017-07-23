@@ -7,7 +7,7 @@ title: Abhishek Agrawal
 {% assign painting_posts = site.posts | where: "category", "paintings" %}
 
 <div class="bio">
-  <h1 class="top-aligned">Abhishek Agrawal</h1>
+  <h1>Abhishek Agrawal</h1>
   <p>Hi! I'm Abhishek and this is a collection of some of my art and engineering projects.
   </p>
   <p>I'm currently living in San Francisco and working on a new company. Previously, I 
@@ -27,7 +27,7 @@ title: Abhishek Agrawal
     <!--<a href="https://github.com/abhishek0988/" target="_blank">
       <i class="fa fa-github-square fa-lg"></i>
     </a>-->
-    <a href="mailto:abhishek88@gmail.com">
+    <a href="mailto:a@aagrawal.me">
       <i class="fa fa-envelope-square fa-lg"></i>
     </a>
   </div>
@@ -36,12 +36,23 @@ title: Abhishek Agrawal
 
 <div class="sections">  
   
-  <!--<h3 class="no-top-margin"><a href="">Projects</a></h3>-->
+  <!--<div class="section">
+    <h3><a href="">Projects</a></h3>
+    <ul class="no-top-margin no-bottom-margin">
+      <li>Dropbox Recents
+      <li>Dropbox Full-text Search</li>
+      <li>3D Scanner v2</li>
+      <li>TrivPals</li>
+      <li>3D Scanner v1</li>
+      <li>Microsoft Office Ribbon Hero</li>
+      <li>Microsoft Office Chart Advisor</li>
+    </ul>
+  </div>-->
 
   <div class="section">
-    <h3 class="no-top-margin no-bottom-margin"><a href="/photos.html">Photography</a></h3>  
+    <h3><a href="/painting.html">Painting</a></h3>  
     <div class="teaser-grid">
-      {% for post in photo_posts limit: 3 %}
+      {% for post in painting_posts limit: 3 %}
           <div class="cell">
             <a href="{{post.url}}">
               <img src="{{post.thumb_url}}" class="responsive-image" title="{{post.title}}"/>
@@ -52,9 +63,9 @@ title: Abhishek Agrawal
   </div>
 
   <div class="section">
-    <h3 class="no-bottom-margin"><a href="/painting.html">Painting</a></h3>  
+    <h3><a href="/photos.html">Photography</a></h3>  
     <div class="teaser-grid">
-      {% for post in painting_posts limit: 3 %}
+      {% for post in photo_posts limit: 3 %}
           <div class="cell">
             <a href="{{post.url}}">
               <img src="{{post.thumb_url}}" class="responsive-image" title="{{post.title}}"/>

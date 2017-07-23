@@ -23,6 +23,7 @@ task :publish => [:generate] do
 
     system "rm -f 'rakefile' 'Gemfile' 'Gemfile.lock'"
     system "rm -r img/originals"
+    system "rm -r img/candidates"
 
     system "git init"
     system "git add ."
