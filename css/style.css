@@ -58,9 +58,6 @@ a:hover { color: #39c; }
 }
 
 .section { margin-top: 3em; }
-.section:first-of-type {
-  margin-top: 0;
-}
 
 .section h3 {
   margin-bottom: 0;
